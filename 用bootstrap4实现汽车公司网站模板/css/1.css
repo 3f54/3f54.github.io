@@ -1,0 +1,302 @@
+*{margin: 0px;padding: 0px;border: none;}
+a{text-decoration:none;color: #000; font-size: 0.8rem;}
+a:hover{text-decoration: none; color: #000;}
+li{list-style: none;}
+/*头部*/
+/*导航条*/
+.dht .collapse .navbar-nav .nav-item{
+	margin: 0px 2px;
+}
+
+.dht .collapse .navbar-nav .nav-item:first-child::before{
+	width: 100%;
+	content: "";
+	height: 5px;
+	background-color: #3E9EEE;
+	position: absolute;
+	top:0px;
+}
+
+.dht .collapse .navbar-nav .nav-item:not(:first-child)::before{
+	width: 100%;
+	content: "";
+	height: 5px;
+	background-color: #3E9EEE;
+	position: absolute;
+	top:0px;
+}
+.dht .collapse .navbar-nav .nav-item:hover::before{
+	width: 100%;
+}
+.dht .collapse .navbar-nav .nav-item:first-child .nav-link{
+	color: rgba(57,172,230,1.00);
+}
+.dht .collapse .navbar-nav .nav-item .nav-link{
+	font-size: 0.9rem;
+	color: rgba(0,0,0,0.8);
+}
+.dht .collapse .navbar-nav .nav-item .nav-link:hover{
+	color: rgba(57,172,230,1.00);
+}
+/*鼠标触碰时显示导航条标签的二级菜单*/
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+/*让导航条标签点击显示失效*/
+.dropdown>.dropdown-toggle:active {/*:active 选择器用于选择活动链接，当您在一个链接上点击时，它就会成为活动的（激活的）*/
+    pointer-events: none; /*意思就是让鼠标事件失效（链接、点击等事件）。*/
+}
+
+/*中间*/
+/*轮播图*/
+.carousel-control-prev-icon{
+	display: none;
+}
+.carousel-control-next-icon{
+	display: none;
+}
+.carousel:hover .carousel-control-prev-icon{
+	display: block;
+}
+.carousel:hover .carousel-control-next-icon{
+	display: block;
+}
+
+/*车型纵览*/
+.cxzl .cxzl_wz div:last-child a:first-child{
+	background-color: rgba(37,123,232,1.00);
+	color: #fff;
+}
+.cxzl .cxzl_wz div:last-child a{
+	text-align: center;
+	line-height: 30px;
+	display:inline-block;
+	width: 60px;
+	height: 30px;
+	margin: 0px 2px;
+	transition: 0.2s all;
+	font-size: 0.75rem;
+}
+.cxzl .cxzl_wz div:last-child a:hover{
+	background-color: rgba(37,123,232,1.00);
+	color: #fff;
+}
+/*车型纵览轮播图*/
+.cxzl_lbt .carousel-inner .carousel-item .col-lg-4 div:first-child{
+	margin-bottom: 15px;
+}
+.cxzl_lbt .carousel-inner .carousel-item .col-lg-4 h6{
+	text-align: center;
+}
+.cxzl_lbt .carousel-inner .carousel-item .col-lg-4 p{
+	color: #666666;
+    font-size: 12px;
+    white-space: nowrap;		/*超过一行不换行*/
+	overflow: hidden;			/*超出部分隐藏*/
+	text-overflow: ellipsis;	/*隐藏成...*/
+    height: 28px;
+    position: relative;
+    z-index: 1;
+}
+.cxzl input{
+	display: block;
+	margin: 0px auto;
+	width: 100px;
+	height: 30px;
+	font-size: 0.9rem;
+	background-color: #fff;
+	border:rgba(66,151,248,1.00) 1px solid;
+	color: rgba(66,151,248,1.00);
+	cursor: pointer;
+	transition: 0.3s all;
+}
+.cxzl input:hover{
+	background-color: rgba(66,151,248,1.00);
+	color: #fff;
+}
+
+/*走进工厂*/
+.zjgc_qh nav{
+	margin-top: 20px;
+}
+.zjgc_qh nav .nav{
+	border: 0px;
+}
+.zjgc_qh .nav .nav-item{
+	margin: 0px auto;
+	border: 0px;
+	background-color: rgba(73,120,249,1.00);
+	border-radius: 0px;
+	color: rgba(0,0,0,0.5);
+}
+.zjgc_qh .nav .nav-item:first-child{
+	margin-right:1px;
+}
+.zjgc_qh .nav .nav-item:nth-child(2){
+	margin: 0px;
+}
+.zjgc_qh .nav .nav-item:last-child{
+	margin-left:1px;
+}
+
+/*走进工厂 切换栏内容*/
+.zjgc_qh .tab-content .tab-pane .row:first-child{
+	margin-bottom: 10px;
+}
+.zjgc_qh .tab-content .tab-pane .col-xl-3>div{
+	border-radius: 3px;
+	border:1px solid rgba(0,0,0,0.1);
+	margin-bottom: 20px;
+}
+.zjgc_qh .tab-content .tab-pane .col-xl-3 img{
+	border-radius: 3px 3px 0px 0px;
+}
+.zjgc_qh .tab-content .tab-pane .col-xl-3 p{
+	font-size: 1.2rem;
+	margin-bottom: 0px;
+	font-family: "宋体";
+	padding: 10px;
+	cursor: pointer;
+}
+.zjgc_qh .tab-content .tab-pane .col-xl-3 p:hover{
+	color: rgba(62,117,234,1.00);
+}
+
+/*新闻中心*/
+.xwzx_qh .nav{
+	margin-top: 20px;
+}
+.xwzx_qh .a1 .nav-item{
+	margin: 0px auto;
+}
+.xwzx_qh .a1 .nav-item .nav-link{
+	transition: 0.2s all;
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	padding: 0px;
+}
+.xwzx_qh .nav .nav-item:first-child{
+	margin-right: 7px;
+}
+.xwzx_qh .nav .nav-item:last-child{
+	margin-left: 7px;
+}
+/*新闻中心切换栏内容*/
+.xwzx_qh .tab-content .tab-pane .col-xl-4{
+	padding: 0px;
+}
+.xwzx_qh .tab-content .tab-pane .col-xl-4 .container{
+	padding: 0px;
+}
+.xwzx_qh .tab-content .tab-pane .col-xl-4 .row>div:first-child{
+	
+}
+.xwzx_qh .tab-content .tab-pane .col-xl-4 .row>div:first-child>div{
+	width: 85px;
+	height: 85px;
+	border-radius: 50%;
+	border:1px solid rgba(0,0,0,1.00);
+}
+.xwzx_qh .tab-content .tab-pane .col-xl-4 .row>div:last-child{
+	text-align: left;
+	min-width: 170px;
+}
+.xwzx_qh .tab-content .tab-pane .col-xl-4 .row>div:last-child p:first-child{
+	font-weight: bold;
+}
+.xwzx_qh .tab-content .tab-pane .col-xl-4 .row>div:last-child p:last-child{
+	font-size: 0.9rem;
+	max-height: 5.0em;			/*最大高度为*/
+    overflow: hidden;			/*超出隐藏*/
+    text-overflow: ellipsis;	/*隐藏时换成...*/
+    display: -webkit-box;	/*定义display*/
+    -webkit-line-clamp: 2;	/*显示的行数*/
+    -webkit-box-orient: vertical;	/*执行*/
+}
+
+/*尾部*/
+footer>div{
+	position: relative;
+}
+footer>div:first-child::before{
+	content: '';
+    height: 40px;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    background-color: #4173e0;
+    left: 0;
+}
+.wbdh_z .row>div:first-child .row>div p{
+	cursor: pointer;
+	line-height: 40px;
+	height: 40px;
+	background-color: #4173e0;
+	color: #fff;
+}
+.wbdh_z .row>div:first-child .row>div ul li{
+	font-size: 0.8rem;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+.wbdh_z .row>div:nth-child(2) .row>div p{
+	cursor: pointer;
+	line-height: 40px;
+	height: 40px;
+	background-color: #4173e0;
+	color: #fff;
+}
+.wbdh_z .row>div:nth-child(2) .row>div ul li{
+	font-size: 0.8rem;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+.wbdh_z_tb{
+	padding: 0px;
+}
+.wbdh_z_tb .col-xl-2{
+	padding: 0px;
+}
+.wbdh_z_wb{
+	padding: 0px;
+}
+.wbdh_z_wb .col-12{
+	padding: 0px;
+}
+.wbdh_z_jw p{
+	font-size: 0.95rem;
+}
+.wbdh_z_jw a{
+	font-size: 0.95rem;
+}
+.wx::before{
+	content: "\f1d7";
+}
+.qq::before{
+	content: "\f1d6";
+}
+/*尾部菜单*/
+.azcd div{
+	float: left;
+	width: 25%;
+	color: #fff;
+	cursor: pointer;
+}
+.azcd div:first-child::before{
+	content: "\f095";
+	display: block;
+}
+.azcd div:nth-child(2)::before{
+	content: "\f095";
+	display: block;
+}
+.azcd div:nth-child(3)::before{
+	content: "\f095";
+	display: block;
+}
+.azcd div:nth-child(4)::before{
+	content: "\f095";
+	display: block;
+}
